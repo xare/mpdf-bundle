@@ -1,0 +1,4 @@
+services:
+    xare\MpdfBundle\Factory\MpdfFactory:
+        arguments: ["%kernel.cache_dir%"]
+        public: true

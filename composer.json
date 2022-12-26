@@ -1,0 +1,53 @@
+{
+    "name": "xare/mpdf-bundle",
+    "description": "Mpdf for Symfony (6.0)",
+    "keywords": [
+        "mpdf",
+        "symfony",
+        "xare"
+    ],
+    "type": "symfony-bundle",
+    "homepage": "https://github.com/xare/mpdf-bundle",
+    "support": {
+        "email": "xaresd@gmail.com",
+        "issues": "https://github.com/mpdf-bundle/issues"
+    },
+    "license": "MIT",
+    "authors": [{
+        "name": "Juan Etxenike Almeida",
+        "email": "xaresd@gmail.com"
+    }],
+    "config": {
+        "bin-dir": "bin",
+        "component-dir": "vendor",
+        "preferred-install": {
+            "*": "dist"
+        },
+        "process-timeout": 1200,
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "": "tests"
+        }
+    },
+    "require": {
+        "php": ">=8.0",
+        "mpdf/mpdf": "*",
+        "symfony/config": "^6.0",
+        "symfony/dependency-injection": "^6.0",
+        "symfony/http-kernel": "^6.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.0-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
